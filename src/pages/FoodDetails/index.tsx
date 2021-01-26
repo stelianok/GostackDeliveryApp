@@ -108,7 +108,7 @@ const FoodDetails: React.FC = () => {
 
     setExtras(
       extras.map(extra =>
-        extra.id === id ? { ...extra, quantity: extra.quantity + 1 } : extra,
+        extra.id === id ? { ...extra, quantity: extra.quantity - 1 } : extra,
       ),
     );
   }
